@@ -1,0 +1,35 @@
+/* ==========================================================================
+  
+Debris Film Veil
+
+
+	1. Root
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Root
+
+========================================================================== */
+
+.fullscreen-veil {
+	display          : none;
+	background-color : #000;
+	width            : 100%;
+	height           : 100%;
+	position         : fixed;
+	top              : 0;
+	z-index          : 999;
+	@include Opacity(0.9);
+	@include animation(0s, 1s, fadeInVeil);
+}
+
+.mm-opened .fullscreen-veil, .movie-playing .fullscreen-veil {
+	display : block;
+}
+
+.mm-closing .fullscreen-veil {
+	@include animation(0s, 600ms, fadeOut);	
+}

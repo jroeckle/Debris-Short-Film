@@ -1,0 +1,51 @@
+/* ==========================================================================
+  
+Debris STYLE GUIDE SETTINGS
+
+
+	1. Colors
+	2. Typefaces/Fonts
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Colors
+
+========================================================================== */
+
+$errorRed        : #f85b5b;
+$lightGrey       : #b5b3b3;
+$darkGrey        : #201e1e;
+$copyBlack       : #2d2d2d;
+$hightlightGreen : #66cc66;
+
+/* ==========================================================================
+
+	2. Typefaces/Fonts
+
+========================================================================== */
+
+
+$title-font    : 'Vollkorn', serif;
+$subtitle-font : 'Vollkorn', serif;
+$copy-font     : 'Gentium Book Basic', serif;
+
+@mixin titleElement() {
+	font-family    : $title-font;
+	text-transform : uppercase;
+	color          : $darkGrey ;
+}
+
+@mixin subtitleElement() {
+	font-family : $subtitle-font;
+	font-style  : italic;
+	color       : #6b6b6b;
+}
+
+@mixin copyElement() {
+	font-family : $copy-font;
+	color       : $copyBlack;
+	line-height : 1.9;
+}

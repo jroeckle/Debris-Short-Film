@@ -1,0 +1,58 @@
+/* ==========================================================================
+  
+Debris Film Movieplayer
+
+	1. Root Element
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Root Element
+
+========================================================================== */
+
+.movie-player-wrapper {
+	display  : none;
+	position : absolute;
+	top      : 0;
+	z-index  : 999;
+	height   : 100%;
+	width    : 100%;
+	padding  : 0;
+	margin   : 0;
+}
+
+.movie-player {
+	display        : table-cell;
+	text-align     : center;
+	vertical-align : middle;
+}
+
+.vimeo-wrapper {
+	position       : relative; 
+	padding-bottom : 55%; 
+	height         : 0; 
+	overflow       : hidden; 
+	max-width      : 100%; 
+	height         : auto;
+}
+
+
+.vimeo-wrapper iframe, .vimeo-wrapper object, .vimeo-wrapper embed {
+	position : absolute; 
+	left     : 12.5%;
+	width    : 75%;
+	height   : 75%;
+}
+
+.movie-player .close-btn {
+	margin : rem-calc(10) 12.5%;
+	max-width : 75%;
+	text-align : right;
+	color : #fff;
+	&:hover {
+		cursor : pointer;
+	}
+}

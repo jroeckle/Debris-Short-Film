@@ -1,0 +1,70 @@
+/* ==========================================================================
+  
+Debris Film Footer
+
+
+	1. Root Element
+	2. Footer Nav
+	3. Footer Logo
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Root Element
+
+========================================================================== */
+
+footer {
+	height           : stickyFooterHeight(false);
+	background-color : $lightGrey;
+	@include animation(0s, 2s, fadeIn);
+	&:after {
+		clear : both;
+	}
+}
+
+
+
+/* ==========================================================================
+
+	2. Footer Nav
+
+========================================================================== */
+
+.footer-nav {
+	color         : #fff;
+	float         : left;
+	margin-bottom : 0;
+}
+
+.footer-nav a {
+	color       : #fff;
+	line-height : rem-calc(40 - 5);
+	padding     : 0 rem-calc(10);
+	border-top  : 5px solid $lightGrey;
+	font-family : $copy-font;
+	@include transition(border-top, 150ms);
+	&:hover {
+		border-top : 5px solid #888;
+	}
+}
+
+.footer-nav a.watch-the-film {
+	border-top       : 5px solid $hightlightGreen;
+	background-color : $hightlightGreen;
+	&:hover {
+		border-top : 5px solid #888;
+	}
+}
+
+/* ==========================================================================
+
+	3. Footer Logo
+
+========================================================================== */
+
+footer .footer-logo {
+	float : left;
+}

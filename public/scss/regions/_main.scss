@@ -1,0 +1,63 @@
+/* ==========================================================================
+  
+Debris Film Main Area
+
+
+	1. Root Element
+	2. Content Area
+	3. Mobile Screen
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Root Element
+
+========================================================================== */
+
+#main {
+	height        : 100%;
+	margin-bottom : stickyFooterHeight(true); 
+	display       : table;
+	width         : 100%;
+}
+
+#main:after {
+	content : "";
+	display : block;
+	height  : stickyFooterHeight(true);
+}
+
+/* ==========================================================================
+
+	2. Content Area
+
+========================================================================== */
+
+.landing-wrapper {
+	display        : table-cell;
+	text-align     : center;
+	vertical-align : middle;
+}
+
+.landing-wrapper .logo {
+	margin : rem-calc(50) 0;
+}
+
+.landing-wrapper .award {
+	margin : rem-calc(25) rem-calc(10);	
+	@include animation(0s, 5s, fadeIn);
+}
+
+/* ==========================================================================
+
+	3. Mobile Screen
+
+========================================================================== */
+
+.mobile-nav {}
+
+.mobile-nav .button {
+	color : #fff;
+}

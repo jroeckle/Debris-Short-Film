@@ -1,0 +1,63 @@
+/* ==========================================================================
+  
+Debris Film About
+
+
+	1. Typography
+	2. Graphic
+
+========================================================================== */
+
+
+/* ==========================================================================
+
+	1. Typography
+
+========================================================================== */
+
+.about section.copy > p {
+	color  : #000;
+	@include copyElement();
+	@include animation(0s, 2.5s, fadeIn);
+}
+
+.about .title {
+	margin : rem-calc(50) 0 0;
+	@include titleElement();
+	@include animation(0s, 1.5s, fadeIn);
+}
+
+.about hr {
+	width  : 33%;
+	margin : 1.1875rem auto 1.1875rem;
+}
+
+.about .subtitle {
+	@include subtitleElement();
+}
+
+/* ==========================================================================
+
+	2. Graphic
+
+========================================================================== */
+
+
+.about .circle-graphic {
+	margin : rem-calc(50) auto;
+	width  : rem-calc(152);
+	height : rem-calc(146);
+	background : url('../img/about/diskAnne.png');
+	@include animation(0s, 2s, fadeIn);
+}
+
+.about .circle-graphic.filmmaker {
+	background-position : 0 -146px;
+}
+
+.about .close-btn {
+	color : #000;
+	&:hover {
+		cursor : pointer;
+	}
+}
